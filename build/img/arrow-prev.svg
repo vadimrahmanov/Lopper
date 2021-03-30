@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 27 27">
+  <defs/>
+  <circle r="13.5" fill="#C4C4C4" fill-opacity=".05" transform="matrix(-1 0 0 1 13.5 13.5)"/>
+  <circle r="13" stroke="#fff" stroke-opacity=".5" transform="matrix(-1 0 0 1 13.5 13.5)"/>
+  <path fill="#F4F4ED" d="M9.209 13.854a.5.5 0 010-.708l3.182-3.182a.5.5 0 11.707.708L10.27 13.5l2.828 2.828a.5.5 0 11-.707.707l-3.182-3.181zm8.229.146H9.563v-1h7.874v1z"/>
+</svg>
