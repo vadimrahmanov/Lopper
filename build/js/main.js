@@ -1,27 +1,62 @@
+/* eslint-disable no-undef */
+
+/* eslint-disable no-unused-vars */
 'use strict';
 
-var header = document.querySelector('.header__container');
-var navigationList = document.querySelector('.header__navigation-list');
-var navigationButton = document.querySelector('.header__navigation-btn');
-var navigationPhone = document.querySelector('.header__navigation-callus');
+(function () {
+  var header = document.querySelector('.header__container');
+  var body = document.querySelector('body');
+  var navigationList = document.querySelector('.header__navigation-list');
+  var navigationButton = document.querySelector('.header__navigation-btn');
+  var navigationPhone = document.querySelector('.header__navigation-callus');
 
-function hideNavigation() {
-  navigationList.classList.toggle('header__navigation-list--opened');
-  navigationPhone.classList.toggle('header__navigation-callus--opened');
-  showMobileNavigation();
-}
+  function hideNavigation() {
+    navigationList.classList.toggle('header__navigation-list--opened');
+    navigationPhone.classList.toggle('header__navigation-callus--opened');
+    showMobileNavigation();
+  }
 
-function showMobileNavigation() {
-  header.classList.toggle('header__container--change-bg');
-}
+  function showMobileNavigation() {
+    header.classList.toggle('header__container--change-bg');
+    body.classList.toggle('nav-opened');
+    navigationButton.classList.toggle('header__navigation-btn--opened');
+  }
 
-function hideMobileNavigation() {
-  navigationList.classList.add('header__navigation-list--hide');
-}
+  function hideMobileNavigation() {
+    navigationList.classList.add('header__navigation-list--hide');
+  }
 
-function init() {
-  navigationButton.addEventListener('click', hideNavigation);
-  hideMobileNavigation();
-}
+  function init() {
+    navigationButton.addEventListener('click', hideNavigation);
+    hideMobileNavigation();
+  }
 
-window.onload = init;
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'custom',
+      renderCustom: function renderCustom(_swiper, current, total) {
+        return current + '/' + total;
+      }
+    },
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button__btn--next',
+      prevEl: '.swiper-button__btn--prev'
+    },
+    breakpoints: {
+      1024: {
+        allowTouchMove: false,
+        slidesPerView: 1,
+        spaceBetween: 1
+      },
+      768: {
+        allowTouchMove: true
+      },
+      320: {
+        spaceBetween: 2
+      }
+    }
+  });
+  window.onload = init;
+})();

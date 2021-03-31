@@ -45,3 +45,19 @@
   src: url("../fonts/noticia-text-italic.woff2") format("woff2"), url("../fonts/noticia-text-italic.woff") format("woff");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Noticia Text";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/noticia-text-bold.woff2") format("woff2"), url("../fonts/noticia-text-bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noticia Text";
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/noticia-text-bold-italic.woff2") format("woff2"), url("../fonts/noticia-text-bold-italic.woff") format("woff");
+  font-display: swap;
+}

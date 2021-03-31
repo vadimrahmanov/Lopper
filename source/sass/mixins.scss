@@ -3,3 +3,28 @@
   padding: 0;
   list-style-type: none;
 }
+
+@mixin learn-more-btn {
+  font-weight: 500;
+  font-size: 13.5px;
+  line-height: 20px;
+  color: $white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 197px;
+  height: 45px;
+  background-color: $pink;
+  border-radius: 36px;
+
+  &:hover {
+    background-color: $dark-blue;
+    color: $pink;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
