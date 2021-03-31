@@ -597,7 +597,9 @@ a {
       height: 80px; } }
 
 .features {
-  margin-top: -78px; }
+  margin-top: -78px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #150433), color-stop(0%, #fff));
+  background: linear-gradient(to left, #150433 50%, #fff 0%); }
 
 .features__container {
   max-width: 1440px;
@@ -702,7 +704,7 @@ a {
   width: 48.7%;
   position: absolute;
   right: 0;
-  bottom: 0px; }
+  bottom: 0; }
 
 .features__slider article {
   width: 98.7%;
@@ -784,6 +786,8 @@ a {
 
 /* ---------------------------------- */
 @media (max-width: 1023px) {
+  .features {
+    background: none; }
   .features__container {
     padding-left: 4%;
     padding-right: 4%;
@@ -849,10 +853,161 @@ a {
     width: 287px;
     height: 381px; } }
 
+.services {
+  background-color: #150433; }
+
 .services__container {
   max-width: 1440px;
   margin: 0 auto;
-  background-color: #150433;
-  min-height: 1000px; }
+  padding-top: 100px;
+  padding-bottom: 277px; }
+
+.services__title {
+  font-weight: 800;
+  font-size: 12.6px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #f61067;
+  margin: 0;
+  padding-top: 22px; }
+
+.services__subtitle {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 67px;
+  text-align: center;
+  color: #fcfcfc;
+  margin: 0;
+  padding-top: 12px; }
+
+.services__description {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 29px;
+  color: #fcfcfc;
+  margin: 0 auto;
+  width: 558px;
+  text-align: center;
+  padding-top: 23px; }
+
+.services__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding-left: 10.2%;
+  padding-right: 13.2%;
+  padding-top: 77px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.services__list-content {
+  width: 318px; }
+
+.services__list-item {
+  margin-bottom: 60px; }
+
+.services__list-content svg {
+  fill: rgba(196, 196, 196, 0.02); }
+
+.services__list-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  padding-top: 11px; }
+  .services__list-title--orange {
+    color: #f67110; }
+  .services__list-title--green {
+    color: #00f0b5; }
+  .services__list-title--pink {
+    color: #f61067; }
+
+.services__list-content p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16.2px;
+  line-height: 26px;
+  color: #fcfcfc;
+  margin: 0;
+  padding-top: 27px; }
+
+.services__learn-more {
+  font-weight: 500;
+  font-size: 13.5px;
+  line-height: 20px;
+  color: #fcfcfc;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 197px;
+  height: 45px;
+  background-color: #f61067;
+  border-radius: 36px;
+  margin: 0 auto;
+  margin-top: 16px;
+  position: relative;
+  right: 24px; }
+  .services__learn-more:hover {
+    background-color: #150435;
+    color: #f61067; }
+  .services__learn-more:active {
+    opacity: 0.5; }
+  .services__learn-more:hover {
+    background-color: #fcfcfc;
+    border-color: #000000; }
+
+@media (max-width: 1023px) {
+  .services__subtitle {
+    font-size: 36px;
+    line-height: 41px; }
+  .services__description {
+    font-size: 15px;
+    line-height: 25px;
+    width: 60%; }
+  .services__list {
+    padding-left: 4%;
+    padding-right: 3%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+@media (max-width: 767px) {
+  .services__container {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 40px; }
+  .services__list-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%; }
+  .services__list-content p {
+    text-align: center; }
+  .services__description {
+    width: 100%; }
+  .services__learn-more {
+    position: static; } }
 
 /*# sourceMappingURL=styles.css.map */

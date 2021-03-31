@@ -1,5 +1,6 @@
 .features {
   margin-top: -78px;
+  background: linear-gradient(to left, #150433 50%, #ffffff 0%);
 }
 
 .features__container {
@@ -166,6 +167,10 @@
 /* ---------------------------------- */
 
 @media (max-width: $tablet) {
+  .features {
+    background: none;
+  }
+
   .features__container {
     padding-left: 4%;
     padding-right: 4%;
