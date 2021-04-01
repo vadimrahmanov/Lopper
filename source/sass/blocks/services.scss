@@ -6,7 +6,7 @@
   max-width: $desktop;
   margin: 0 auto;
   padding-top: 100px;
-  padding-bottom: 277px;
+  padding-bottom: 261px;
 }
 
 .services__title {
@@ -52,12 +52,9 @@
   justify-content: space-between;
 }
 
-.services__list-content {
-  width: 318px;
-}
-
 .services__list-item {
   margin-bottom: 60px;
+  width: 28.7%;
 }
 
 .services__list-content svg {
@@ -124,6 +121,10 @@
     padding-right: 3%;
     justify-content: space-around;
   }
+
+  .services__list-item {
+    width: 40%;
+  }
 }
 
 @media (max-width: $mobile) {
@@ -137,6 +138,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .services__list-item {
     width: 100%;
   }
 

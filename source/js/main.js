@@ -57,5 +57,31 @@
     }
   });
 
+  const swiperSubscription = new Swiper('.subscription__slider-container', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-buttons__btn--next',
+      prevEl: '.swiper-buttons__btn--prev',
+    },
+    breakpoints: {
+      1024: {
+        allowTouchMove: false,
+        slidesPerView: 1
+      },
+      768: {
+        pagination: false
+      },
+      320: {
+        pagination: {
+          el: '.swiper-pagination-subscription',
+          type: 'custom',
+          renderCustom: function (_swiper, current, total) {
+            return current + ' of ' + total;
+          }
+        }
+      }
+    }
+  });
+
   window.onload = init;
 })();
