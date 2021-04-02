@@ -820,14 +820,13 @@ a {
   max-width: 1440px;
   margin: 0 auto;
   padding-left: 10.2%;
-  background: -webkit-gradient(linear, left top, right top, color-stop(100%, #30124e), color-stop(0%, #ffffff)) no-repeat, -webkit-gradient(linear, left bottom, left top, color-stop(19.6%, #150433), color-stop(0%, #ffffff));
-  background: linear-gradient(to right, #30124e 100%, #ffffff 0%) no-repeat, linear-gradient(to top, #150433 19.6%, #ffffff 0%);
-  background-size: 69.4% auto;
+  background: -webkit-gradient(linear, left top, right top, color-stop(100%, #30124e), color-stop(0%, #ffffff)) repeat-y, -webkit-gradient(linear, left bottom, left top, color-stop(19.6%, #150433), color-stop(0%, #ffffff)) repeat-x;
+  background: linear-gradient(to right, #30124e 100%, #ffffff 0%) repeat-y, linear-gradient(to top, #150433 19.6%, #ffffff 0%) repeat-x;
+  background-size: 69.4% 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-top: 120px;
-  padding-right: 147px;
-  padding-bottom: 131px;
+  padding-right: 10.2%;
 }
 
 .features__content-container {
@@ -842,7 +841,8 @@ a {
 }
 
 .features__content {
-  width: 52%;
+  width: 51%;
+  min-height: 830px;
 }
 
 .features__title {
@@ -872,7 +872,7 @@ a {
   line-height: 29px;
   color: #fcfcfc;
   margin: 0;
-  width: 78%;
+  width: 79%;
   padding-top: 17px;
 }
 
@@ -937,7 +937,7 @@ a {
   width: 48.7%;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 131px;
 }
 
 .features__slider article {
@@ -952,11 +952,14 @@ a {
 
 .features__slider-image {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .features__slider-image img {
   width: 100%;
-  height: 100%;
+  height: 99%;
   max-width: 460px;
 }
 
@@ -979,22 +982,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  margin-right: 17%;
+  padding-left: 52.6%;
   padding-top: 34px;
 }
 
 .swiper-button {
-  width: 72px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-left: 27px;
+  margin-left: 26px;
 }
 
 .swiper-button__btn {
@@ -1004,6 +1000,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   cursor: pointer;
+  background-repeat: no-repeat;
 }
 
 .swiper-button__btn:hover {
@@ -1016,6 +1013,7 @@ a {
 
 .swiper-button__btn--next {
   background-image: url("../img/arrow-next.svg");
+  margin-left: 18px;
 }
 
 .swiper-pagination {
@@ -1052,6 +1050,7 @@ a {
 
   .features__content {
     width: 100%;
+    min-height: initial;
   }
 
   .features__subtitle {
@@ -1115,6 +1114,7 @@ a {
     -ms-flex-pack: center;
     justify-content: center;
     padding-top: 5px;
+    padding-left: 0;
   }
 }
 
