@@ -6,6 +6,7 @@
 (function () {
   var header = document.querySelector('.header__container');
   var body = document.querySelector('body');
+  var navigation = document.querySelector('.header__navigation');
   var navigationList = document.querySelector('.header__navigation-list');
   var navigationButton = document.querySelector('.header__navigation-btn');
   var navigationPhone = document.querySelector('.header__navigation-callus');
@@ -27,6 +28,10 @@
   }
 
   function init() {
+    navigationButton.classList.remove('header__navigation-btn--nojs');
+    navigation.classList.remove('header__navigation--nojs');
+    navigationList.classList.remove('header__navigation-list--nojs');
+    navigationPhone.classList.remove('header__navigation-callus--nojs');
     navigationButton.addEventListener('click', hideNavigation);
     hideMobileNavigation();
   }

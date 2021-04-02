@@ -4,6 +4,7 @@
 (function () {
   let header = document.querySelector('.header__container');
   let body = document.querySelector('body');
+  let navigation = document.querySelector('.header__navigation');
   let navigationList = document.querySelector('.header__navigation-list');
   let navigationButton = document.querySelector('.header__navigation-btn');
   let navigationPhone = document.querySelector('.header__navigation-callus');
@@ -25,6 +26,10 @@
   }
 
   function init() {
+    navigationButton.classList.remove('header__navigation-btn--nojs');
+    navigation.classList.remove('header__navigation--nojs');
+    navigationList.classList.remove('header__navigation-list--nojs');
+    navigationPhone.classList.remove('header__navigation-callus--nojs');
     navigationButton.addEventListener('click', hideNavigation);
     hideMobileNavigation();
   }

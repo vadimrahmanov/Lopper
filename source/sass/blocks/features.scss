@@ -71,6 +71,10 @@
 .features__learn-more {
   @include learn-more-btn;
   margin-top: 53px;
+
+  &:hover {
+    background-color: $white;
+  }
 }
 
 /* SWIPER */

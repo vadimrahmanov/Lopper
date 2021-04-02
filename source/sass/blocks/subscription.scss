@@ -202,11 +202,12 @@
   border: none;
   width: 100%;
   padding-top: 7px;
+  padding-left: 5px;
 
   &::placeholder {
     letter-spacing: 4px;
     text-transform: uppercase;
-    padding-left: 16px;
+    padding-left: 12px;
   }
 }
 
@@ -229,6 +230,15 @@
   align-items: center;
   padding-left: 27px;
   padding-top: 2px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 @media (max-width: $tablet) {
